@@ -37,7 +37,7 @@ with col1:
 with col2:
     st.link_button("Donate to GrantsScope", "https://explorer.gitcoin.co/#/round/424/0x7492a8c4ed29b1f1559888bd832fae5d33e10370/0x7492a8c4ed29b1f1559888bd832fae5d33e10370-47",type="secondary")
 
-index = './citizens round 2/storage/faiss_index'
+index = './storage/faiss_index'
 embeddings = OpenAIEmbeddings()
 
 memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
