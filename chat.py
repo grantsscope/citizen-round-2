@@ -140,5 +140,5 @@ if st.session_state.logged_prompt:
         prompt_id=st.session_state.logged_prompt.id,
     )
 
-    if user_feedback:
-         trubrics_successful_feedback(user_feedback)
+    #if user_feedback:
+    #     trubrics_successful_feedback(user_feedback)
