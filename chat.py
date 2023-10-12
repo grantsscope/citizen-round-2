@@ -81,12 +81,15 @@ def conversational_chat(query):
 # Trivia
 
 trivia = [
-    "Did you know that many prominent web3 organizations were once grantees of Gitcoin, and a large number have even returned as funders, like Push Protocol, Mask Network, 1inch.",
     "Have you checked out the GG19 Outline and Strategy yet? Join the discussion [here](https://gov.gitcoin.co/t/gg19-outline-and-strategy/16682)",
     "Did you know Grants Stack supports Direct Grants?! [Click](https://x.com/grantsstack/status/1701967342559694938?s=20) to hear more from Meg Lister, Product Lead.",
-    "You can now move your Passport Onchain to access high quality, trustworthy onchain opportunities. Read more about it [here](https://www.gitcoin.co/blog/gitcoin-passport-onchain-stamps).",
+    "You can now move your Passport Onchain to access high-quality, trustworthy onchain opportunities. Read more about it [here](https://www.gitcoin.co/blog/gitcoin-passport-onchain-stamps).",
     "What has the Gitcoin team got up to in September and what's ahead? Click [here](https://x.com/gitcoin/status/1707761192725336170?s=20) to find out.",
-    "CharmVerse, an operations platform for web3 communities, was looking for authentic and value-creating ways to bring in new users. CharmVerse uses Allo to enable any group that registers to automatically get a claimable workspace for their project."
+    "CharmVerse, an operations platform for web3 communities, was looking for authentic and value-creating ways to bring in new users. CharmVerse uses Allo to enable any group that registers to automatically get a claimable workspace for their project.",
+    "Whether you are an active contributor, Gitcoin Steward, GTC holder or simply curious, [Gitcoin Pulse](https://podcasters.spotify.com/pod/show/gitcoin/episodes/Oct-9---Passport-UI-Changes--GG19-Outline--Scaling-Gitcoins-Impact--Incident-of-Mishandled-Funds--Allo-GCP-Proposal-e2afojp) is your one-stop-shop for getting informed on all things Gitcoin. Every episode will cover a few of our top happenings at Gitcoin followed by short interviews with active contributors to better get to know the Gitcoin community and the projects they are working on.",
+    "Gitcoin is piloting Direct Grants with PowerPool for their Builder Grants Program - read more about it [here](https://x.com/powerpoolcvp/status/1712469716034625767?s=20),
+    "If you haven't checked the new UI for Gitcoin Passport, click [here](https://x.com/gitcoinpassport/status/1709562453288521945?s=20) for a breakdown of exciting updates!",
+    "It's been a busy S19 in Allo land 🏗️ [Here's](https://x.com/alloprotocol/status/1707843080051708252?s=20) a quick rundown of everything we've been working on.",
 ]
 
 
@@ -118,7 +121,7 @@ if prompt := st.chat_input("Ask me about the grantees in this round."):
     # Display assistant response in chat message container
     with st.chat_message("assistant"):
         message_placeholder = st.empty()
-        message_placeholder.markdown("While I look that up for you, here's some Gitcoin trivia: " + "\n\n" + random.choice(trivia))        
+        message_placeholder.markdown("While I look that up for you, here's what's buzzing at Gitcoin: " + "\n\n" + random.choice(trivia))        
         response = conversational_chat(prompt)
         message_placeholder.markdown(response)
 
