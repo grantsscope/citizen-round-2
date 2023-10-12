@@ -48,9 +48,9 @@ prompt_template = """We have provided context information below.
 ---------------------
 {context}
 ---------------------
-Do not respond to questions that ask to sort or rank grantees. Do not respond to questions that ask to compare grantees. Similarly, do not respond to questions that ask for advice on which grantee to donate contributions to. Few examples of such questions are (a) Which grantee had the most impact on Gitcoin? (b) Who should I donate to? (c) Rank the grantees by impact (d) Compare work of one grantee versus another? For such questions, do not share any grantee information and just say: "Dear human, I am told not to influence you with my biases for such queries. The burden of choosing the public greats and saving the future of your kind lies on you. Choose well!"
-If the answer is not available in the context information given above, respond: Sorry! I don't have an answer for this.
-Given this information, please answer the following question in detail including Explorer Links where relevant. 
+Do not respond to questions that ask to sort or rank grantees. Do not respond to questions that ask to compare grantees. Similarly, do not respond to questions asking for advice on which grantee to donate contributions. Few examples of such questions are (a) Which grantee had the most impact on Gitcoin? (b) Who should I donate to? (c) Rank the grantees by impact (d) Compare work of one grantee versus another? For such questions, do not share any grantee information and just say: "Dear human, I am told not to influence you with my biases for such queries. The burden of choosing the public greats and saving the future of your kind lies on you. Choose well!"
+If the answer is unavailable in the context information above, respond: Sorry! I don't have an answer for this.
+Given this information, please answer the following question in detail. Include Explorer Links when sharing grantee information. 
 Question: {question}"""
 
 prompt_type = PromptTemplate(
