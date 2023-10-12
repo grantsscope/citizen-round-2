@@ -87,7 +87,7 @@ trivia = [
     "What has the Gitcoin team got up to in September and what's ahead? Click [here](https://x.com/gitcoin/status/1707761192725336170?s=20) to find out.",
     "CharmVerse, an operations platform for web3 communities, was looking for authentic and value-creating ways to bring in new users. CharmVerse uses Allo to enable any group that registers to automatically get a claimable workspace for their project.",
     "Whether you are an active contributor, Gitcoin Steward, GTC holder or simply curious, [Gitcoin Pulse](https://podcasters.spotify.com/pod/show/gitcoin/episodes/Oct-9---Passport-UI-Changes--GG19-Outline--Scaling-Gitcoins-Impact--Incident-of-Mishandled-Funds--Allo-GCP-Proposal-e2afojp) is your one-stop-shop for getting informed on all things Gitcoin. Every episode will cover a few of our top happenings at Gitcoin followed by short interviews with active contributors to better get to know the Gitcoin community and the projects they are working on.",
-    "Gitcoin is piloting Direct Grants with PowerPool for their Builder Grants Program - read more about it [here](https://x.com/powerpoolcvp/status/1712469716034625767?s=20),
+    "Gitcoin is piloting Direct Grants with PowerPool for their Builder Grants Program - read more about it [here](https://x.com/powerpoolcvp/status/1712469716034625767?s=20)",
     "If you haven't checked the new UI for Gitcoin Passport, click [here](https://x.com/gitcoinpassport/status/1709562453288521945?s=20) for a breakdown of exciting updates!",
     "It's been a busy S19 in Allo land 🏗️ [Here's](https://x.com/alloprotocol/status/1707843080051708252?s=20) a quick rundown of everything we've been working on.",
 ]
