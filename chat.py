@@ -27,7 +27,7 @@ collector = FeedbackCollector(
 
 # Initialize Streamlit app configuration
 st.set_page_config(page_title="GrantsScope - Gitcoin Citizens Round II")
-st.title('GrantsScope')
+st.header('GrantsScope')
 st.subheader ('Gitcoin Citizens Round #2')
 st.markdown('[The Gitcoin Citizens Round](https://gov.gitcoin.co/t/rewarding-the-community-gitcoin-citizens-round-2/16506) supports individuals running new or ongoing projects that matter enormously to the Gitcoin community. Donations open until October 24th 23:59 UTC. GrantsScope is also a grantee in this round seeking retroactive funding.')
 
@@ -50,7 +50,7 @@ prompt_template = """We have provided context information below.
 ---------------------
 Do not respond to questions that ask to sort or rank grantees. Do not respond to questions that ask to compare grantees. Similarly, do not respond to questions that ask for advice on which grantee to donate contributions to. Few examples of such questions are (a) Which grantee had the most impact on Gitcoin? (b) Who should I donate to? (c) Rank the grantees by impact (d) Compare work of one grantee versus another? For such questions, do not share any grantee information and just say: "Dear human, I am told not to influence you with my biases for such queries. The burden of choosing the public greats and saving the future of your kind lies on you. Choose well!"
 If the answer is not available in the context information given above, respond: Sorry! I don't have an answer for this.
-Given this information, please answer the following question in detail including Explorer Links where relevant. Format the output as a table if the response includes multiple grantees.
+Given this information, please answer the following question in detail including Explorer Links where relevant. 
 Question: {question}"""
 
 prompt_type = PromptTemplate(
@@ -85,7 +85,7 @@ trivia = [
     "Have you checked out the GG19 Outline and Strategy yet? Join the discussion [here](https://gov.gitcoin.co/t/gg19-outline-and-strategy/16682)",
     "Did you know Grants Stack supports Direct Grants?! [Click](https://x.com/grantsstack/status/1701967342559694938?s=20) to hear more from Meg Lister, Product Lead.",
     "You can now move your Passport Onchain to access high quality, trustworthy onchain opportunities. Read more about it [here](https://www.gitcoin.co/blog/gitcoin-passport-onchain-stamps).",
-    "WHAT THE GITCOIN TEAM GOT UP TO IN SEPTEMBER 2023 (AND WHAT’S AHEAD? Click [here](https://x.com/gitcoin/status/1707761192725336170?s=20) to find out.",
+    "What has the Gitcoin team got up to in September and what's ahead? Click [here](https://x.com/gitcoin/status/1707761192725336170?s=20) to find out.",
     "CharmVerse, an operations platform for web3 communities, was looking for authentic and value-creating ways to bring in new users. CharmVerse uses Allo to enable any group that registers to automatically get a claimable workspace for their project."
 ]
 
