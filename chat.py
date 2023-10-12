@@ -65,7 +65,7 @@ chain = ConversationalRetrievalChain.from_llm(
 		temperature=0.0,
 		model_name='gpt-3.5-turbo-16k'
 		),
-	retriever=vectors.as_retriever(search_type="mmr"),
+	retriever=vectors.as_retriever(),
 	memory=memory,
 	combine_docs_chain_kwargs=chain_type_kwargs,
 	#max_tokens_limit=3000
