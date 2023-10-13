@@ -100,7 +100,11 @@ st.session_state['history'] = []
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
-    welcome_msg="""Hi there 👋! Here are some of the things you can try... \n Create content to shill a project (e.g., Write a 30-second pitch to help shill Kris' efforts!) \n Discover what initiatives grantees are working on (e.g., What are some innovative technical ideas folks are working on?) \n Dig deeper into an area of interest (e.g., Create a table with the name of the grantee, description of their work, and links to Explorer who are directly working on data and analytics.) \n Clarify and understand the relevance of specific initiatives (e.g., I don't quite understand what quadratic attention payment mechanism is.)"""
+    welcome_msg="""Hi there 👋! Here are some of the things you can try...  
+    Create content to shill a project (e.g., Write a 30-second pitch to help shill Kris' efforts!)  
+    Discover what initiatives grantees are working on (e.g., What are some innovative technical ideas folks are working on?)  
+    Dig deeper into an area of interest (e.g., Create a table with the name of the grantee, description of their work, and links to Explorer who are directly working on data and analytics.)  
+    Clarify and understand the relevance of specific initiatives (e.g., I don't quite understand what quadratic attention payment mechanism is.)"""
     #st.chat_message("assistant").markdown(welcome_msg)
     st.session_state.messages.append({"role": "assistant", "content": welcome_msg})
 
