@@ -38,6 +38,13 @@ with col1:
 with col2:
     st.link_button("Donate to GrantsScope", "https://explorer.gitcoin.co/#/round/424/0x7492a8c4ed29b1f1559888bd832fae5d33e10370/0x7492a8c4ed29b1f1559888bd832fae5d33e10370-47",type="secondary")
 
+with st.expander("See sample questions"):
+	st.markdown(\"\"\"
+ 		- Create content to shill a project (e.g., _Write a 30-second pitch to help shill Kris' efforts!_)  
+		- Discover what initiatives grantees are working on (e.g., _What are some innovative technical ideas folks are working on?_)  
+		- Dig deeper into an area of interest (e.g., _Create a table with the name of the grantee, description of their work, and links to Explorer who are directly working on data and analytics._)  
+		- Clarify and understand the relevance of specific initiatives (e.g., _I don't quite understand what quadratic attention payment mechanism is._)
+ 	\"\"\")
 index = './storage/faiss_index'
 embeddings = OpenAIEmbeddings()
 
@@ -100,11 +107,7 @@ st.session_state['history'] = []
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
-    welcome_msg="""Hi there 👋! Here are some of the things you can try...  
-    - Create content to shill a project (e.g., _Write a 30-second pitch to help shill Kris' efforts!_)  
-    - Discover what initiatives grantees are working on (e.g., _What are some innovative technical ideas folks are working on?_)  
-    - Dig deeper into an area of interest (e.g., _Create a table with the name of the grantee, description of their work, and links to Explorer who are directly working on data and analytics._)  
-    - Clarify and understand the relevance of specific initiatives (e.g., _I don't quite understand what quadratic attention payment mechanism is._)"""
+    welcome_msg="Hi there 👋!" 
     #st.chat_message("assistant").markdown(welcome_msg)
     st.session_state.messages.append({"role": "assistant", "content": welcome_msg})
 
